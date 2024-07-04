@@ -18,14 +18,14 @@ const TaskList = props => {
       <input
         type="checkbox"
         className="checkbox-input"
-        id="checkbox"
+        id={id}
         checked={isChecked}
         onClick={onClickCheckbox}
       />
       <div className="label-container">
         <label
           className={`checkbox-label ${isCheckedStyle}`}
-          htmlFor="checkbox"
+          htmlFor={id}
         >
           {todoInput}
         </label>
